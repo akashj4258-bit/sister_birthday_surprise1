@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Akka 🎂❤️</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ffd6e7, #ffeef5, #ffd1dc);
+            text-align: center;
+            color: #5a2340;
+            overflow-x: hidden;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: none;
+            padding: 30px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .page.active {
+            display: flex;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 750px;
+            background: rgba(255, 255, 255, 0.94);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        input {
+            width: 100%;
+            max-width: 300px;
+            padding: 14px;
+            border: 2px solid #ff8fb3;
+            border-radius: 12px;
+            font-size: 18px;
+            text-align: center;
+            margin: 15px 0;
+            outline: none;
+        }
+
+        button {
+            border: none;
+            padding: 14px 28px;
+            border-radius: 25px;
+            background: #ff5c8a;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            margin: 10px;
+            box-shadow: 0 5px 15px rgba(255,92,138,0.3);
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        #error {
+            color: red;
+            font-weight: bold;
+            display: none;
+        }
+
+        .message {
+            text-align: left;
+            background: #fff7fa;
+            padding: 22px;
+            border-radius: 18px;
+            margin-top: 15px;
+        }
+
+        .message p {
+            font-size: 17px;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 25px;
+            animation: floatUp 5s linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        .photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            width: 100%;
+        }
+
+        .photos img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            max-height: 550px;
+            object-fit: contain;
+            border-radius: 20px;
+            background: white;
+            padding: 5px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 600px) {
+
+            .page {
+                padding: 20px 12px;
+            }
+
+            .box {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .message p {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+
+            button {
+                font-size: 16px;
+                padding: 12px 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- PASSWORD PAGE -->
+    <section id="passwordPage" class="page active">
+
+        <div class="box">
+
+            <h1>🎁 Something Special Awaits... ❤️</h1>
+
+            <p>
+                This little surprise is only for you. ✨
+            </p>
+
+            <p>
+                Enter the secret password to continue 🔑
+            </p>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+            >
+
+            <br>
+
+            <button onclick="checkPassword()">
+                Unlock Surprise 💖
+            </button>
+
+            <p id="error">
+                Wrong password! Try again ❤️
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE PAGE -->
+    <section id="messagePage" class="page">
+
+        <div class="box">
+
+            <h1>💖 Happy 22nd Birthday Akka! 💖</h1>
+
+            <div class="message">
+
+                <p>
+                    Happy 22nd Birthday to my one and only sister, my forever fighter,
+                    my first-rank queen, and of course… my favourite கோவக்காரி! 😂❤️🎂🫂💞
+                </p>
+
+                <p>
+                    From the day we grew up together, one thing I know for sure is that
+                    you always give your 100% in everything you do. 📚✨
+                    College-la 4 years படிச்சாலும், 4 years-um FIRST தான்! 🥹🏆👑
+                    That's something I'll always be proud of you for. ❤️‍🔥✨
+                </p>
+
+                <p>
+                    You are hardworking, intelligent, strong and someone who never gives up.
+                    💪🏻📖🌟
+                    But one small request from your thambi…
+                    konjam கோபத்தை மட்டும் குறைச்சுக்கோ! 😂😤❤️
+                    Because sometimes your anger comes faster than your words! 🤣🫂💗
+                </p>
+
+                <p>
+                    Now you're officially 22, so கொஞ்சம் இன்னும் responsible-ah,
+                    எல்லா விஷயங்களையும் balance பண்ணி,
+                    life-ah சந்தோஷமா enjoy பண்ணி,
+                    உனக்காகவும் கொஞ்சம் நேரம் வை. 🥹❤️✨
+                </p>
+
+                <p>
+                    Whatever happens, never change the beautiful heart you have. 💞🫶🏻
+                    You may be the strictest sister, the most கோவக்காரி sister,
+                    and sometimes the biggest headache to me 😂😤,
+                    but you'll always be one of the most important people in my life.
+                    🫂❤️‍🩹👩‍❤️‍👨
+                </p>
+
+                <p>
+                    No matter how much we fight, tease, irritate each other or argue,
+                    at the end of the day you'll always be my sister
+                    and I'll always be your thambi. 🥹🫂💖🧿
+                </p>
+
+                <p>
+                    May this 22nd year bring you more success, happiness, peace,
+                    love and beautiful memories. 🎂✨🌸
+                    Keep achieving, keep smiling, keep shining,
+                    and please… keep your கோபம் கொஞ்சம் control-la வை! 😂❤️‍🔥👑
+                </p>
+
+                <p>
+                    Happy Birthday, Akka! 🥳🎂💗🫂
+                    Love you always, my first-rank queen! 👑❤️🧿✨
+                </p>
+
+            </div>
+
+            <button onclick="showBirthday()">
+                Continue 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY PAGE -->
+    <section id="birthdayPage" class="page">
+
+        <div class="box">
+
+            <h1>🎂 HAPPY 22nd BIRTHDAY AKKA! 🎂</h1>
+
+            <p style="font-size: 30px;">
+                🥳💖🫂✨👑🧿
+            </p>
+
+            <p>
+                To my forever fighter and first-rank queen! 👑❤️
+            </p>
+
+            <p>
+                Keep smiling, keep achieving and keep shining! ✨
+            </p>
+
+            <button onclick="showPhotos()">
+                See Your Memories 📸
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO PAGE -->
+    <section id="photoPage" class="page">
+
+        <div class="box">
+
+            <h1>📸 Beautiful Memories ❤️</h1>
+
+            <div class="photos">
+
+                <!-- PHOTOS WILL BE ADDED HERE -->
+                <p>
+                    Your beautiful memories will be added here. ❤️📸
+                </p>
+
+            </div>
+
+            <button onclick="showFinal()">
+                One Last Surprise ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL PAGE -->
+    <section id="finalPage" class="page">
+
+        <div class="box">
+
+            <h1>👑 For My Akka ❤️</h1>
+
+            <p style="font-size: 22px;">
+                No matter how much we fight or tease each other,
+                you'll always be my Akka and I'll always be your thambi. 🫂❤️
+            </p>
+
+            <p style="font-size: 25px;">
+                Keep Achieving 🏆<br>
+                Keep Smiling 😊<br>
+                Keep Shining ✨<br>
+                And Keep Your Anger Under Control! 😂❤️
+            </p>
+
+            <h2>
+                Once Again...<br>
+                🎂 HAPPY 22nd BIRTHDAY AKKA! 🎂
+            </h2>
+
+            <p style="font-size: 30px;">
+                🫂💓💞💖👑🧿🪬✨
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <script>
+
+        /* PASSWORD */
+        function checkPassword() {
+
+            const password =
+                document.getElementById("password").value;
+
+            const error =
+                document.getElementById("error");
+
+            if (password === "20092004") {
+
+                error.style.display = "none";
+
+                document.getElementById("passwordPage")
+                    .classList.remove("active");
+
+                document.getElementById("messagePage")
+                    .classList.add("active");
+
+                createHearts();
+
+            } else {
+
+                error.style.display = "block";
+
+            }
+        }
+
+
+        /* BIRTHDAY PAGE */
+        function showBirthday() {
+
+            document.getElementById("messagePage")
+                .classList.remove("active");
+
+            document.getElementById("birthdayPage")
+                .classList.add("active");
+
+            createHearts();
+        }
+
+
+        /* PHOTO PAGE */
+        function showPhotos() {
+
+            document.getElementById("birthdayPage")
+                .classList.remove("active");
+
+            document.getElementById("photoPage")
+                .classList.add("active");
+
+            createHearts();
+        }
+
+
+        /* FINAL PAGE */
+        function showFinal() {
+
+            document.getElementById("photoPage")
+                .classList.remove("active");
+
+            document.getElementById("finalPage")
+                .classList.add("active");
+
+            createHearts();
+        }
+
+
+        /* FLOATING HEARTS */
+        function createHearts() {
+
+            for (let i = 0; i < 8; i++) {
+
+                const heart = document.createElement("div");
+
+                heart.className = "heart";
+
+                const hearts = [
+                    "❤️",
+                    "💖",
+                    "💓",
+                    "💞",
+                    "💕",
+                    "💗"
+                ];
+
+                heart.innerHTML =
+                    hearts[Math.floor(Math.random() * hearts.length)];
+
+                heart.style.left =
+                    Math.random() * 100 + "vw";
+
+                heart.style.animationDuration =
+                    (3 + Math.random() * 3) + "s";
+
+                document.body.appendChild(heart);
+
+                setTimeout(function () {
+                    heart.remove();
+                }, 6000);
+            }
+        }
+
+
+        /* ENTER KEY */
+        document.getElementById("password")
+            .addEventListener("keypress", function(event) {
+
+                if (event.key === "Enter") {
+                    checkPassword();
+                }
+
+            });
+
+    </script>
+
+</body>
+</html>
