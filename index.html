@@ -103,26 +103,6 @@
             font-size: 17px;
         }
 
-        .heart {
-            position: fixed;
-            bottom: -30px;
-            font-size: 25px;
-            animation: floatUp 5s linear forwards;
-            pointer-events: none;
-        }
-
-        @keyframes floatUp {
-            0% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-110vh);
-                opacity: 0;
-            }
-        }
-
         .photos {
             display: flex;
             flex-direction: column;
@@ -141,6 +121,26 @@
             background: white;
             padding: 5px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -30px;
+            font-size: 25px;
+            animation: floatUp 5s linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
         }
 
         @media (max-width: 600px) {
@@ -234,7 +234,7 @@
                     From the day we grew up together, one thing I know for sure is that
                     you always give your 100% in everything you do. 📚✨
                     College-la 4 years படிச்சாலும், 4 years-um FIRST தான்! 🥹🏆👑
-                    That's something I'll always be proud of you for. ❤️‍🔥✨
+                    That’s something I’ll always be proud of you for. ❤️‍🔥✨
                 </p>
 
                 <p>
@@ -246,7 +246,7 @@
                 </p>
 
                 <p>
-                    Now you're officially 22, so கொஞ்சம் இன்னும் responsible-ah,
+                    Now you’re officially 22, so கொஞ்சம் இன்னும் responsible-ah,
                     எல்லா விஷயங்களையும் balance பண்ணி,
                     life-ah சந்தோஷமா enjoy பண்ணி,
                     உனக்காகவும் கொஞ்சம் நேரம் வை. 🥹❤️✨
@@ -256,14 +256,14 @@
                     Whatever happens, never change the beautiful heart you have. 💞🫶🏻
                     You may be the strictest sister, the most கோவக்காரி sister,
                     and sometimes the biggest headache to me 😂😤,
-                    but you'll always be one of the most important people in my life.
+                    but you’ll always be one of the most important people in my life.
                     🫂❤️‍🩹👩‍❤️‍👨
                 </p>
 
                 <p>
                     No matter how much we fight, tease, irritate each other or argue,
-                    at the end of the day you'll always be my sister
-                    and I'll always be your thambi. 🥹🫂💖🧿
+                    at the end of the day you’ll always be my sister
+                    and I’ll always be your thambi. 🥹🫂💖🧿
                 </p>
 
                 <p>
@@ -326,10 +326,15 @@
 
             <div class="photos">
 
-                <!-- PHOTOS WILL BE ADDED HERE -->
-                <p>
-                    Your beautiful memories will be added here. ❤️📸
-                </p>
+                <img src="photo_a1.jpg" alt="Memory 1">
+
+                <img src="photo_a2.jpg" alt="Memory 2">
+
+                <img src="photo_a3.jpg" alt="Memory 3">
+
+                <img src="photo_a4.jpg" alt="Memory 4">
+
+                <img src="photo_a5.jpg" alt="Memory 5">
 
             </div>
 
@@ -351,7 +356,7 @@
 
             <p style="font-size: 22px;">
                 No matter how much we fight or tease each other,
-                you'll always be my Akka and I'll always be your thambi. 🫂❤️
+                you’ll always be my Akka and I’ll always be your thambi. 🫂❤️
             </p>
 
             <p style="font-size: 25px;">
@@ -377,7 +382,6 @@
 
     <script>
 
-        /* PASSWORD */
         function checkPassword() {
 
             const password =
@@ -406,7 +410,6 @@
         }
 
 
-        /* BIRTHDAY PAGE */
         function showBirthday() {
 
             document.getElementById("messagePage")
@@ -419,7 +422,6 @@
         }
 
 
-        /* PHOTO PAGE */
         function showPhotos() {
 
             document.getElementById("birthdayPage")
@@ -432,7 +434,6 @@
         }
 
 
-        /* FINAL PAGE */
         function showFinal() {
 
             document.getElementById("photoPage")
@@ -445,7 +446,6 @@
         }
 
 
-        /* FLOATING HEARTS */
         function createHearts() {
 
             for (let i = 0; i < 8; i++) {
@@ -481,7 +481,6 @@
         }
 
 
-        /* ENTER KEY */
         document.getElementById("password")
             .addEventListener("keypress", function(event) {
 
